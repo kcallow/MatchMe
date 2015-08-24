@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" style=text/css href="LoginFormCss.css">
+        <title>MatchMe.com LogIn</title>
+    </head> 
+    <body>
+        <header class="head2">
+            <img src="logotipo.png">
+        </header>
+        <section id="banner">
+            <div class="head1">
+                <p>This is MATCHME.COM</p>
+                <p>LOGIN</p>
+            </div>
+            <div class="formulario_registro">
+                <form method="post" class="signup" action="ingreso.js">
+                    <fieldset class="textbox">
+                    <label class="username">
+                    <span>Usuario</span><br>
+                    <input id="username" name="username" value="" type="text" placeholder="Usuario" required ><br>
+                    </label>
+                    <label class="password">
+                    <span>Contrase&ntilde;a</span><br>
+                    <input id="password" name="password" value="" type="password" placeholder="Contrase&ntilde;a" required><br>
+                    </label>
+                    <br>
+                    <input type="submit" id="go" value="Aceptar" onClick="window.location.href='PantallaUsuarioHtml.html'">
+                    <input  type="button" id="cancel"value="Cancelar" onClick="window.location.href='PantallaInicio.html'">
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+        
+    </body>
+</html>
