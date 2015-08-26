@@ -7,10 +7,25 @@
 	</head>
 	<body>
 	<header class="head1">
-		<img src="logotipo.png"><img src="LogoOficialTrans.png" alt="" width="102" height="101" align="right"/></header>
+		<img src="logotipo.png" align="left"><img src="LogoOficialTrans.png" alt="" width="102" height="101" align="right">
+                <form method="post" class="signup" action="ingreso.js" align="center">
+                    <fieldset class="textbox">
+                    <label class="username">
+                    <span>Usuario</span><br>
+                    <input id="username" name="username" value="" type="text" placeholder="Usuario" required ><br>
+                    </label>
+                    <label class="password">
+                    <span>Contrase&ntilde;a</span><br>
+                    <input id="password" name="password" value="" type="password" placeholder="Contrase&ntilde;a" required><br>
+                    </label>
+                    <br>
+                    <input type="submit" id="go" value="Login" onClick="window.location.href='PantallaUsuarioHtml.html'">
+                    </fieldset>
+                </form>
+	</header>
 		<section id="banner">
 			<div class="inner">
-				<h2>Bienvenido a MatchMe.com</h2>
+				<h1>Bienvenido a MatchMe.com</h1>
 				<p>Reg&iacute;strese para conocer corazones buscando romance.</p>
 			</div>
 			<div class="formulario_registro">

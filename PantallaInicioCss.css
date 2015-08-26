@@ -16,6 +16,9 @@ head{
 
 .head1{
     background-color: black;
+    display: list-item;
+    text-align:center;
+    padding: 1em 0;
 }
 input[type="submit"],
 	input[type="reset"],
@@ -222,7 +225,6 @@ input[type="submit"],
 		#banner .button {
 			min-width: 12em;
 		}
-
 		#banner .formulario_registro {
 			position: relative;
 			z-index: 1;
@@ -234,4 +236,4 @@ input[type="submit"],
         #banner .formulario_registro :last-child {
             margin-bottom: 0;
         }
-:q
+
