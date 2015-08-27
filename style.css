@@ -6,6 +6,16 @@ body {
 	background-repeat:repeat;
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
+head{
+    background-color: black;
+}
+
+.head1{
+    background-color: white;
+    display: list-item;
+    text-align:center;
+    padding: 0.7em 0;
+}
 html {
 	padding:0;
 	margin:0;
@@ -304,7 +314,6 @@ ol li .send {
 	margin:16px 0 0 0;
 }
 .search {
-    background-color: #fff;
 	float:right;
 	width:250px;
 	padding:25px 0;
