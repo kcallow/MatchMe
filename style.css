@@ -49,7 +49,6 @@ h1 small {
 
 h2 {
 	font:normal 24px , "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-	padding:8px 0;
 	margin:0;
 }
 p {
@@ -103,9 +102,9 @@ a.rm, a.com {
 	display:block;
 	margin:0;
 	padding:11px 25px;
-	color:black;
+	color:white;
 	text-decoration:none;
-	font-size:13px;
+	font-size:16px;
 	line-height:16px;
 }
 .menu_nav ul li.active a, .menu_nav ul li a:hover {
@@ -209,7 +208,6 @@ ul.ex_menu li a:hover {
 }
 .fbg {
 	padding:10px 0;
-	background:url(images/fbg_bg.jpg) repeat-y center;
 }
 .fbg_resize {
 	margin:0 auto;
@@ -222,10 +220,8 @@ ul.ex_menu li a:hover {
 	background-color:#fff;
 }
 .fbg p, .fbg h2 {
-	color:#fbfbfb;
 }
 .fbg a {
-	color:#fbfbfb;
 }
 .fbg .col {
 	margin:0;
@@ -312,12 +308,11 @@ ol li .send {
 	margin:16px 0 0 0;
 }
 .search {
-	float:right;
+	float:left;
 	width:250px;
-	padding:25px 0;
 }
 .search span {
-	width:235px;
+	width:490px;
 	display:block;
 	background-color:#FFF;
 	height:29px;
@@ -327,7 +322,7 @@ ol li .send {
 }
 .search input#s {
 	float:left;
-	width:185px;
+	width:440px;
 	padding:7px 0 7px 10px;
 	margin:0;
 	border:0;
