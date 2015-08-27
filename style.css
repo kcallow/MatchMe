@@ -39,22 +39,22 @@ h1 span {
 	color: crimson;
 }
 .logo p{
-    font: normal 20px/1.2em , "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font: normal 20px/1.2em ;
 }
 h1 small {
 	padding:0 10px;
-	font:normal 12px/1.2em , "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font:normal 12px/1.2em ;
 	letter-spacing:normal;
 }
 
 h2 {
-	font:normal 24px , "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font:normal 24px ;
 	margin:0;
 }
 p {
 	margin:8px 0;
 	padding:0 0 8px 0;
-	font:normal 12px/1.8em , "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font:normal 12px/1.8em ;
 }
 p.spec {
 }
@@ -162,7 +162,7 @@ a.rm, a.com {
 }
 .sidebar .gadget span.q {
 	text-align:right;
-	font:normal 60px/12px , "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font:normal 60px/12px ;
 }
 ul.sb_menu, ul.ex_menu {
 	margin:0;
@@ -328,7 +328,7 @@ ol li .send {
 	border:0;
 	background:none;
 	color:#afaeae;
-	font:normal 12px/15px , "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font:normal 12px/15px ;
 }
 .search .btn {
 	float:left;
@@ -339,7 +339,7 @@ ol li .send {
 }
 .pagenavi {
 	clear:both;
-	font:normal 11px , "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font:normal 11px ;
 	margin:0 auto;
 	text-align:right;
 	padding:20px 15px;
