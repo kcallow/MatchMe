@@ -18,4 +18,4 @@ tablespace GE_DATA
 alter table Email
   add CONSTRAINT pk_email PRIMARY KEY (email);
 alter table Email
-  add CONSTRAINT fk_username FOREIGN KEY (username) REFERENCES PERSONA(username);
+  add CONSTRAINT fk_email_persona FOREIGN KEY (username) REFERENCES PERSONA(username);

@@ -24,7 +24,7 @@ alter table CIUDAD
   initrans 2
   maxtrans 255;
 alter table CIUDAD
-  add CONSTRAINT fk_pais_id FOREIGN KEY (pais_id) REFERENCES PAIS(pais_id);
+  add CONSTRAINT fk_ciudad_pais FOREIGN KEY (pais_id) REFERENCES PAIS(pais_id);
 -- Create/Recreate check constraints 
 alter table CIUDAD
   add constraint CIUDAD_NOMBRE_NN

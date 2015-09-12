@@ -10,7 +10,7 @@ create table PERSONA
   segundo_apellido 	VARCHAR2(30),
   nombre		VARCHAR2(40),
   genero_id		NUMBER,
-  CONSTRAINT fk_genero_id FOREIGN KEY (genero_id) REFERENCES GENERO(genero_id),
+  CONSTRAINT fk_persona_genero FOREIGN KEY (genero_id) REFERENCES GENERO(genero_id),
   ciudad_id		NUMBER,
-  CONSTRAINT fk_ciudad_id FOREIGN KEY (ciudad_id) REFERENCES CIUDAD(ciudad_id)
+  CONSTRAINT fk_persona_ciudad FOREIGN KEY (ciudad_id) REFERENCES CIUDAD(ciudad_id)
 );

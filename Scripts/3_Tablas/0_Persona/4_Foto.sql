@@ -23,4 +23,4 @@ alter table FOTO
   maxtrans 255;
 
 alter table FOTO
-  add CONSTRAINT fk_username FOREIGN KEY (username) REFERENCES PERSONA(username);
+  add CONSTRAINT fk_foto_persona FOREIGN KEY (username) REFERENCES PERSONA(username);
