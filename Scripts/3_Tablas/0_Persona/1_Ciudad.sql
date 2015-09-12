@@ -2,8 +2,8 @@
 create table CIUDAD
 (
   ciudad_id NUMBER not null,
-  nombre    VARCHAR2(30)
-  pais_id NUMBER,
+  nombre    VARCHAR2(30),
+  pais_id NUMBER
 )
 tablespace GE_DATA
   pctfree 10

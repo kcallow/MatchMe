@@ -8,7 +8,7 @@ create table PERSONA
 --identidad_id	 	NUMBER not null,
   primer_apellido 	VARCHAR2(30),
   segundo_apellido 	VARCHAR2(30),
-  nombre		VARCHAR2(40)
+  nombre		VARCHAR2(40),
   genero_id		NUMBER,
   CONSTRAINT fk_genero_id FOREIGN KEY (genero_id) REFERENCES GENERO(genero_id),
   ciudad_id		NUMBER,
