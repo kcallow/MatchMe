@@ -13,4 +13,4 @@ create table PERSONA
   CONSTRAINT fk_genero_id FOREIGN KEY (genero_id) REFERENCES GENERO(genero_id),
   ciudad_id		NUMBER,
   CONSTRAINT fk_ciudad_id FOREIGN KEY (ciudad_id) REFERENCES CIUDAD(ciudad_id)
-)
+);

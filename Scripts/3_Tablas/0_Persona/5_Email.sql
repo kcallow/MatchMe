@@ -1,7 +1,7 @@
 -- Create table
 create table Email
 (
-  email varchar2(80) not null
+  email varchar2(80) not null,
   username varchar2(10)
 )
 tablespace GE_DATA
