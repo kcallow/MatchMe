@@ -3,6 +3,7 @@ create table CIUDAD
 (
   ciudad_id NUMBER not null,
   nombre    VARCHAR2(30)
+  pais_id NUMBER,
 )
 tablespace GE_DATA
   pctfree 10
@@ -22,6 +23,8 @@ alter table CIUDAD
   pctfree 10
   initrans 2
   maxtrans 255;
+alter table CIUDAD
+  add CONSTRAINT fk_pais_id FOREIGN KEY (pais_id) REFERENCES PAIS(pais_id);
 -- Create/Recreate check constraints 
 alter table CIUDAD
   add constraint CIUDAD_NOMBRE_NN

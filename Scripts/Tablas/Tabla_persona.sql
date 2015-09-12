@@ -2,6 +2,7 @@ create table PERSONA
 (
   username		VARCHAR2(10),
   CONSTRAINT pk_username PRIMARY KEY (username),
+  es_admin		VARCHAR2(1),
   nacimiento		DATE,
 --identidad_id	 	NUMBER not null,
   primer_apellido 	VARCHAR2(30),
