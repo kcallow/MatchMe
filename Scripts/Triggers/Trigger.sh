@@ -3,7 +3,7 @@ tablas="PAIS CIUDAD GENERO PERSONA FOTO EMAIL COLOR_OJOS COLOR_PELO COLOR_PIEL C
 i=0
 for tabla in $tablas
 do
-	cat > ${i}_Trigger${tabla}.sql <<- END_OF_FILE
+	cat > ${i}_TriggerInsert_${tabla}.sql <<- END_OF_FILE
 	CREATE OR REPLACE TRIGGER beforeInsert_${tabla,,}
 	       BEFORE INSERT
 	       ON GE.${tabla} FOR EACH ROW
@@ -11,6 +11,8 @@ do
 	  :NEW.USUARIO_CREACION:= USER;
 	  :NEW.FEC_CREACION:= SYSDATE;
 	END;
+	END_OF_FILE
+	cat > ${i}_TriggerUpdate_${tabla}.sql <<- END_OF_FILE
 	CREATE OR REPLACE TRIGGER beforeUpdate_${tabla,,}
 	       BEFORE UPDATE
 	       ON GE.${tabla} FOR EACH ROW
