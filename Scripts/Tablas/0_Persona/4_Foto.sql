@@ -1,6 +1,6 @@
 create table FOTO(
   foto_id NUMBER not null,
-  ruta    BLOB
+  ruta    BLOB,
   username varchar2(10)
 )
 tablespace GE_DATA
