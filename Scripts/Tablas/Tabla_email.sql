@@ -2,6 +2,7 @@
 create table Email
 (
   email varchar2(80) not null
+  username varchar2(10)
 )
 tablespace GE_DATA
   pctfree 10
@@ -15,4 +16,6 @@ tablespace GE_DATA
   );
 -- Create/Recreate primary, unique and foreign key constraints 
 alter table Email
-  add constraint PK_EMAIL primary key (EMAIL);
+  add CONSTRAINT pk_email PRIMARY KEY (email);
+alter table Email
+  add CONSTRAINT fk_username FOREIGN KEY (username) REFERENCES PERSONA(username);

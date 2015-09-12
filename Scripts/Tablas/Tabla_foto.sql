@@ -1,6 +1,7 @@
 create table FOTO(
   foto_id NUMBER not null,
   ruta    BLOB
+  username varchar2(10)
 )
 tablespace GE_DATA
   pctfree 10
@@ -20,3 +21,6 @@ alter table FOTO
   pctfree 10
   initrans 2
   maxtrans 255;
+
+alter table FOTO
+  add CONSTRAINT fk_username FOREIGN KEY (username) REFERENCES PERSONA(username);
