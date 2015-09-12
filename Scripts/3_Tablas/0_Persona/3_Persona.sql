@@ -14,3 +14,6 @@ create table PERSONA
   ciudad_id		NUMBER,
   CONSTRAINT fk_persona_ciudad FOREIGN KEY (ciudad_id) REFERENCES CIUDAD(ciudad_id)
 );
+
+alter table PERSONA
+  add slogan		VARCHAR2(140);
