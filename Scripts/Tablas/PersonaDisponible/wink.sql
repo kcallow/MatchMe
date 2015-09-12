@@ -1,10 +1,5 @@
 create table WINK
 (
-  wink_id		   	NUMBER,
-  CONSTRAINT pk_wink PRIMARY KEY (wink_id)
-  using index 
-  tablespace GE_DATA pctfree 10
-  storage ( initial 64K minextents 1 maxextents unlimited),
   fec_WINK			DATE,
 --  fec_creacion			DATE,
 --  fec_ultima_modificacion	DATE,
@@ -12,4 +7,5 @@ create table WINK
   CONSTRAINT fk_emisor FOREIGN KEY (username_emisor) REFERENCES PERSONA(username),
   username_receptor	 	VARCHAR2(10)
   CONSTRAINT fk_receptor FOREIGN KEY (username_receptor) REFERENCES PERSONA(username),
+  CONSTRAINT pk_wink PRIMARY KEY (fec_WINK, username_emisor, username_receptor)
 )

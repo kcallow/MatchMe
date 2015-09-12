@@ -3,6 +3,7 @@ create table PERSONA
   username		VARCHAR2(10),
   CONSTRAINT pk_username PRIMARY KEY (username),
   es_admin		VARCHAR2(1),
+  CONSTRAINT bool_es_admin CHECK(es_admin in (0,1)),
   nacimiento		DATE,
 --identidad_id	 	NUMBER not null,
   primer_apellido 	VARCHAR2(30),
@@ -11,5 +12,5 @@ create table PERSONA
   genero_id		NUMBER,
   CONSTRAINT fk_genero_id FOREIGN KEY (genero_id) REFERENCES GENERO(genero_id),
   ciudad_id		NUMBER,
-  CONSTRAINT fk_ciudad_id FOREIGN KEY (ciudad_id) REFERENCES CIUDAD(ciudad_id),
+  CONSTRAINT fk_ciudad_id FOREIGN KEY (ciudad_id) REFERENCES CIUDAD(ciudad_id)
 )
