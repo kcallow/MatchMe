@@ -7,3 +7,4 @@ grant select on V_$sesstat  to ge;
 grant select on V_$STATNAME  to ge;
 
 grant create view to ge;
+grant create trigger to ge;
