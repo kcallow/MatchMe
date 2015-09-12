@@ -8,4 +8,4 @@ create table WINK
   username_receptor	 	VARCHAR2(10),
   CONSTRAINT fk_wink_persona_receptor FOREIGN KEY (username_receptor) REFERENCES PERSONA(username),
   CONSTRAINT pk_wink PRIMARY KEY (fec_WINK, username_emisor, username_receptor)
-)
+);
