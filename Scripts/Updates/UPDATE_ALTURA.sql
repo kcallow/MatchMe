@@ -1,3 +1,0 @@
-UPDATE ALTURA
-set ALTURA='1.80M'
-where ALTURA_id='1';
