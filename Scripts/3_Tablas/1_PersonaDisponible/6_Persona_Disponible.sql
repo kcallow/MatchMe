@@ -27,11 +27,10 @@ create table PERSONA_DISPONIBLE
 --Azules:
   --ejercicio e interes son n a n
 );
-
 alter table PERSONA_DISPONIBLE
 add (
 	altura		NUMBER,
 	peso		NUMBER,
 	num_hijos	NUMBER,
-	quiere_hijos	VARCHAR2(1),  CONSTRAINT bool_es_real CHECK (es_real in (0,1)),
+	quiere_hijos	VARCHAR2(1),  CONSTRAINT bool_quiere_hijos CHECK (es_real in (0,1))
 );
