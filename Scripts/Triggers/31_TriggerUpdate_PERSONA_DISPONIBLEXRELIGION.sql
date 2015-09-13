@@ -1,4 +1,4 @@
-CREATE OR REPLACE TRIGGER beforeUpdate_persona_disponiblexreligion
+CREATE OR REPLACE TRIGGER beforeUpdate_per_dispxreligion
        BEFORE UPDATE
        ON GE.PERSONA_DISPONIBLEXRELIGION FOR EACH ROW
 BEGIN

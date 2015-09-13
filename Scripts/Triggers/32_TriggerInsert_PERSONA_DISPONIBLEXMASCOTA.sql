@@ -1,4 +1,4 @@
-CREATE OR REPLACE TRIGGER beforeInsert_persona_disponiblexmascota
+CREATE OR REPLACE TRIGGER beforeInsert_per_dispxmascota
        BEFORE INSERT
        ON GE.PERSONA_DISPONIBLEXMASCOTA FOR EACH ROW
 BEGIN

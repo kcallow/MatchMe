@@ -1,4 +1,4 @@
-CREATE OR REPLACE TRIGGER beforeInsert_persona_disponiblexocupacion
+CREATE OR REPLACE TRIGGER beforeInsert_persona_dispxocu
        BEFORE INSERT
        ON GE.PERSONA_DISPONIBLEXOCUPACION FOR EACH ROW
 BEGIN

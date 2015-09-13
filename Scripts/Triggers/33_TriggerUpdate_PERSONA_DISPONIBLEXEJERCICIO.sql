@@ -1,4 +1,4 @@
-CREATE OR REPLACE TRIGGER beforeUpdate_persona_disponiblexejercicio
+CREATE OR REPLACE TRIGGER beforeUpdate_per_dispxejerc
        BEFORE UPDATE
        ON GE.PERSONA_DISPONIBLEXEJERCICIO FOR EACH ROW
 BEGIN

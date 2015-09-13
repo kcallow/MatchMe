@@ -1,4 +1,4 @@
-CREATE OR REPLACE TRIGGER beforeInsert_categoria_ocupacion
+CREATE OR REPLACE TRIGGER beforeInsert_cat_ocu
        BEFORE INSERT
        ON GE.CATEGORIA_OCUPACION FOR EACH ROW
 BEGIN

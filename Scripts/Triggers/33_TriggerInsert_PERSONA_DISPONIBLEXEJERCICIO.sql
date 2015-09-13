@@ -1,4 +1,4 @@
-CREATE OR REPLACE TRIGGER beforeInsert_persona_disponiblexejercicio
+CREATE OR REPLACE TRIGGER beforeInsert_per_dispxejerc
        BEFORE INSERT
        ON GE.PERSONA_DISPONIBLEXEJERCICIO FOR EACH ROW
 BEGIN

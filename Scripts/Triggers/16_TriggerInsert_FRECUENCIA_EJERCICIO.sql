@@ -1,4 +1,4 @@
-CREATE OR REPLACE TRIGGER beforeInsert_frecuencia_ejercicio
+CREATE OR REPLACE TRIGGER beforeInsert_frec_ejercicio
        BEFORE INSERT
        ON GE.FRECUENCIA_EJERCICIO FOR EACH ROW
 BEGIN

@@ -1,4 +1,4 @@
-CREATE OR REPLACE TRIGGER beforeInsert_persona_disponiblexcolor_pelo
+CREATE OR REPLACE TRIGGER beforeInsert_per_dispxc_pelo
        BEFORE INSERT
        ON GE.PERSONA_DISPONIBLEXCOLOR_PELO FOR EACH ROW
 BEGIN

@@ -1,4 +1,4 @@
-CREATE OR REPLACE TRIGGER beforeUpdate_persona_disponiblexidioma
+CREATE OR REPLACE TRIGGER beforeUpdate_per_dispxidioma
        BEFORE UPDATE
        ON GE.PERSONA_DISPONIBLEXIDIOMA FOR EACH ROW
 BEGIN

@@ -1,4 +1,4 @@
-CREATE OR REPLACE TRIGGER beforeInsert_interesxcategoria_interes
+CREATE OR REPLACE TRIGGER beforeInsert_interesxcat_int
        BEFORE INSERT
        ON GE.INTERESXCATEGORIA_INTERES FOR EACH ROW
 BEGIN

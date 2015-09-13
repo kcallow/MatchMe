@@ -2,11 +2,7 @@
 create table PARAMETROS
 (
   parametros_id VARCHAR2(40) not null,
-  valor         VARCHAR2(40) not null,
-  fec_creacion		DATE,
-  usuario_creacion	VARCHAR2(10),
-  fec_ultima_mod	DATE,
-  usuario_ultima_mod	VARCHAR2(10)
+  valor         VARCHAR2(40) not null
 )
 tablespace GE_DATA
   pctfree 10

@@ -1,4 +1,4 @@
-CREATE OR REPLACE TRIGGER beforeUpdate_persona_disponiblexcolor_pelo
+CREATE OR REPLACE TRIGGER beforeUpdate_per_dispxc_pelo
        BEFORE UPDATE
        ON GE.PERSONA_DISPONIBLEXCOLOR_PELO FOR EACH ROW
 BEGIN
