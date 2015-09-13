@@ -1,7 +1,8 @@
 create table FOTO(
   foto_id NUMBER not null,
   ruta    BLOB,
-  username varchar2(10)
+  username varchar2(10),
+  nombre    VARCHAR2(40)
 )
 tablespace GE_DATA
   pctfree 10
