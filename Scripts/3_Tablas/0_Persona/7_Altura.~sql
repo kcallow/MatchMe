@@ -20,7 +20,7 @@ tablespace GE_DATA
   );
 -- Create/Recreate primary, unique and foreign key constraints 
 alter table ALTURA
-  add constraint PK_ALTURA primary key (ALTURA_ID)
+  add constraint PK_ALTURA primary key (PESO_ID)
   using index 
   tablespace GE_DATA
   pctfree 10
@@ -28,6 +28,7 @@ alter table ALTURA
   maxtrans 255;
 -- Create/Recreate check constraints 
 alter table ALTURA
-  add constraint ALTURA_NOMBRE_NN
+  add constraint PESO_NOMBRE_NN
   check ("ALTURA" IS NOT NULL);
 
+    Status API Training Shop Blog About Pricing 
