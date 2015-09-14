@@ -1,3 +1,3 @@
-UPDATE NIVEL_EDUCACION
-set GRADO ='Universidad Completa'
-where NIVEL_EDUCACION_id = '1';
+UPDATE INTERES
+set NOMBRE ='Universidad Completa'
+where INTERES_id = '1';
