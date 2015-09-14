@@ -1,6 +1,6 @@
-create or replace procedure UPDATE_EVENTO(pSET IN VARCHAR, pEVENTO_ID IN NUMBER) is
+create or replace procedure UPDATE_EVENTO(pNOMBRE IN VARCHAR, pEVENTO_ID IN NUMBER) is
 begin
   update EVENTO
-    set SET = pSET
+    set NOMBRE = pNOMBRE
       where EVENTO_id = pEVENTO_ID;
         end UPDATE_EVENTO;
