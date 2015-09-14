@@ -3,4 +3,4 @@ insert into COLOR_PIEL
 values
 ('1', 'Moreno')
 ;
-commit;
+
