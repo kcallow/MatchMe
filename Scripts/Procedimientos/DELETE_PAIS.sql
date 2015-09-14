@@ -1,5 +1,5 @@
-create or replace procedure DELETE_PAIS(pNOMBRE IN VARCHAR, pPAIS_ID IN VARCHAR) is
+create or replace procedure DELETE_PAIS( pPAIS_ID IN NUMBER) is
 begin
-  DELETE from pais
-  where pais_id = pPAIS_ID;
-end  DELETE_PAIS;
+  delete from PAIS
+      where PAIS_id = pPAIS_ID;
+        end DELETE_PAIS;
