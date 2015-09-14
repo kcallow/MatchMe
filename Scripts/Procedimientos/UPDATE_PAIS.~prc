@@ -1,0 +1,7 @@
+create or replace procedure UPDATE_PAIS(pNOMBRE IN VARCHAR, pPAIS_ID IN VARCHAR, FEC_CREACION IN DATE, USUARIO_CREACION IN VARCHAR, FEC_ULTIMA_MOD IN DATE, USUARIO_ULTIMA_MOD IN VARCHAR2) is
+begin
+  update pais
+  set NOMBRE = pNombre
+  where pais_id = pPAIS_ID;
+end UPDATE_PAIS;
+/
