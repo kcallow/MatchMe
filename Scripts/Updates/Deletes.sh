@@ -1,4 +1,4 @@
-for update in *;
+for update in *.sql;
 do
-	sed 's/UPDATE/DELETE FROM/g' $update | grep -v set > ../Delete/${update/UPDATE/DELELE}
+	sed 's/UPDATE/DELETE FROM/Ig' $update | grep -v set > ../Delete/${update/UPDATE/DELELE}
 done
