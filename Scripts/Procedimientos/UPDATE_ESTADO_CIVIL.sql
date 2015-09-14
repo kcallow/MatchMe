@@ -2,5 +2,5 @@ create or replace procedure UPDATE_ESTADO_CIVIL(pNOMBRE IN VARCHAR, pESTADO_CIVI
 begin
   update ESTADO_CIVIL
     set NOMBRE = pNOMBRE
-      where pais_id = pPAIS_ID;
+      where ESTADO_CIVIL_id = pESTADO_CIVIL_ID;
         end UPDATE_ESTADO_CIVIL;

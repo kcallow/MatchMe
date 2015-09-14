@@ -2,5 +2,5 @@ create or replace procedure UPDATE_PAIS(pnombre IN VARCHAR, pPAIS_ID IN NUMBER) 
 begin
   update PAIS
     set nombre = pnombre
-      where pais_id = pPAIS_ID;
+      where PAIS_id = pPAIS_ID;
         end UPDATE_PAIS;

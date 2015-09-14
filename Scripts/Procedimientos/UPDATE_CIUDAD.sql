@@ -2,5 +2,5 @@ create or replace procedure UPDATE_CIUDAD(pnombre IN VARCHAR, pCIUDAD_ID IN NUMB
 begin
   update CIUDAD
     set nombre = pnombre
-      where pais_id = pPAIS_ID;
+      where CIUDAD_id = pCIUDAD_ID;
         end UPDATE_CIUDAD;

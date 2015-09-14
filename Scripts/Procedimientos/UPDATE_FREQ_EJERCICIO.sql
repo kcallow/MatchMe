@@ -2,5 +2,5 @@ create or replace procedure UPDATE_FREQ_EJERCICIO(prango IN VARCHAR, pFREQ_EJERC
 begin
   update FREQ_EJERCICIO
     set rango = prango
-      where pais_id = pPAIS_ID;
+      where FREQ_EJERCICIO_id = pFREQ_EJERCICIO_ID;
         end UPDATE_FREQ_EJERCICIO;

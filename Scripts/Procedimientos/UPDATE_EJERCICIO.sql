@@ -2,5 +2,5 @@ create or replace procedure UPDATE_EJERCICIO(pnombre IN VARCHAR, pEJERCICIO_ID I
 begin
   update EJERCICIO
     set nombre = pnombre
-      where pais_id = pPAIS_ID;
+      where EJERCICIO_id = pEJERCICIO_ID;
         end UPDATE_EJERCICIO;

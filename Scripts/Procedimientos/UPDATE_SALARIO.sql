@@ -2,5 +2,5 @@ create or replace procedure UPDATE_SALARIO(prango IN VARCHAR, pSALARIO_ID IN NUM
 begin
   update SALARIO
     set rango = prango
-      where pais_id = pPAIS_ID;
+      where SALARIO_id = pSALARIO_ID;
         end UPDATE_SALARIO;

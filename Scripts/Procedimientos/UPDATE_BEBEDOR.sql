@@ -2,5 +2,5 @@ create or replace procedure UPDATE_BEBEDOR(pTIPO IN VARCHAR, pBEBEDOR_ID IN NUMB
 begin
   update BEBEDOR
     set TIPO = pTIPO
-      where pais_id = pPAIS_ID;
+      where BEBEDOR_id = pBEBEDOR_ID;
         end UPDATE_BEBEDOR;

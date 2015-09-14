@@ -2,5 +2,5 @@ create or replace procedure UPDATE_PARAMETRO(pSET IN VARCHAR, pPARAMETRO_ID IN N
 begin
   update PARAMETRO
     set SET = pSET
-      where pais_id = pPAIS_ID;
+      where PARAMETRO_id = pPARAMETRO_ID;
         end UPDATE_PARAMETRO;

@@ -2,5 +2,5 @@ create or replace procedure UPDATE_INTERES(pNOMBRE IN VARCHAR, pINTERES_ID IN NU
 begin
   update INTERES
     set NOMBRE = pNOMBRE
-      where pais_id = pPAIS_ID;
+      where INTERES_id = pINTERES_ID;
         end UPDATE_INTERES;

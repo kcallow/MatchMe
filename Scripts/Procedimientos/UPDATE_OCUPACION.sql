@@ -2,5 +2,5 @@ create or replace procedure UPDATE_OCUPACION(pNOMBRE IN VARCHAR, pOCUPACION_ID I
 begin
   update OCUPACION
     set NOMBRE = pNOMBRE
-      where pais_id = pPAIS_ID;
+      where OCUPACION_id = pOCUPACION_ID;
         end UPDATE_OCUPACION;

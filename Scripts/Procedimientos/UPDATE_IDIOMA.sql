@@ -1,6 +1,6 @@
-create or replace procedure UPDATE_IDIOMA(pnombre= IN VARCHAR, pIDIOMA_ID IN NUMBER) is
+create or replace procedure UPDATE_IDIOMA(pnombre IN VARCHAR, pIDIOMA_ID IN NUMBER) is
 begin
   update IDIOMA
-    set nombre= = pnombre=
-      where pais_id = pPAIS_ID;
+    set nombre = pnombre
+      where IDIOMA_id = pIDIOMA_ID;
         end UPDATE_IDIOMA;

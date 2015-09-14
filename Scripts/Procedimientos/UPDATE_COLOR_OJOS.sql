@@ -2,5 +2,5 @@ create or replace procedure UPDATE_COLOR_OJOS(pnombre IN VARCHAR, pCOLOR_OJOS_ID
 begin
   update COLOR_OJOS
     set nombre = pnombre
-      where pais_id = pPAIS_ID;
+      where COLOR_OJOS_id = pCOLOR_OJOS_ID;
         end UPDATE_COLOR_OJOS;

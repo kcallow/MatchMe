@@ -2,5 +2,5 @@ create or replace procedure UPDATE_EVENTO(pSET IN VARCHAR, pEVENTO_ID IN NUMBER)
 begin
   update EVENTO
     set SET = pSET
-      where pais_id = pPAIS_ID;
+      where EVENTO_id = pEVENTO_ID;
         end UPDATE_EVENTO;

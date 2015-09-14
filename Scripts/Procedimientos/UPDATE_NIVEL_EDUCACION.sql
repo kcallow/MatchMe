@@ -2,5 +2,5 @@ create or replace procedure UPDATE_NIVEL_EDUCACION(pNOMBRE IN VARCHAR, pNIVEL_ED
 begin
   update NIVEL_EDUCACION
     set NOMBRE = pNOMBRE
-      where pais_id = pPAIS_ID;
+      where NIVEL_EDUCACION_id = pNIVEL_EDUCACION_ID;
         end UPDATE_NIVEL_EDUCACION;
