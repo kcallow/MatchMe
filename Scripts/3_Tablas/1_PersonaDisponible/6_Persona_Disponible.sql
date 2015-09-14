@@ -34,3 +34,7 @@ add (
 	num_hijos	NUMBER,
 	quiere_hijos	VARCHAR2(1),  CONSTRAINT bool_quiere_hijos CHECK (es_real in (0,1))
 );
+alter table PERSONA_DISPONIBLE
+add (
+	CONSTRAINT PERSONA_DISPONIBLE_ES_REAL_NN check (ES_REAL IS NOT NULL) 
+);
