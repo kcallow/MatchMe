@@ -1,4 +1,3 @@
 DELETE FROM FOTO
-SET RUTA = '123321123', NOMBRE = 'Paseo.jpg'
 where FOTO_ID = '1'
 ;
