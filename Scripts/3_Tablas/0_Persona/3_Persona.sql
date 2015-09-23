@@ -18,5 +18,3 @@ create table PERSONA
 alter table PERSONA
   add slogan		VARCHAR2(140);
 
-alter table PERSONA
-  add edad		number generated always as trunc(months_between(sysdate,dob)/12);
