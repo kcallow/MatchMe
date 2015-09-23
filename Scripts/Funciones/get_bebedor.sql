@@ -9,3 +9,4 @@ CREATE OR REPLACE FUNCTION get_bebedor(pBEBEDOR_ID number)
        RETURN (TIPO);
        commit;
        END get_bebedor;
+/
