@@ -1,3 +1,3 @@
 insert into Visita
-(fecha_visita, visitante,visitado)
-('25/08/2015', 'Bryan365', 'Moises99');
+(fec_visita, username_visitante,username_visitada)
+values ('25/08/2015', 'Bryan365', 'Moises99');
