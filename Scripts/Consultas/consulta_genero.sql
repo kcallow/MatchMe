@@ -9,3 +9,4 @@ FROM persona
 WHERE persona.genero_id = p_genero
 ORDER BY persona.nombre;
 END get_personas;
+/

@@ -18,3 +18,5 @@ create table PERSONA
 alter table PERSONA
   add slogan		VARCHAR2(140);
 
+alter table PERSONA
+  modify slogan		VARCHAR2(500);
