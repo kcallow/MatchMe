@@ -1,0 +1,8 @@
+0	Ciencia y tecnología
+1	Administración
+2	Salud
+3	Educación
+4	Ciencias sociales
+5	Lenguaje y literatura
+6	Política
+7	Derecho

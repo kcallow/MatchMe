@@ -1,7 +1,0 @@
-<td><select multiple>
-  <option value="0">Todos los días</option>
-  <option value="1">Semanalmente</option>
-  <option value="2">Mensualmente</option>
-  <option value="3">Cada 3-6 meses</option>
-  <option value="4">Rara vez</option>
-</select></td>
