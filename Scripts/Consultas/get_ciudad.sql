@@ -5,7 +5,7 @@ CREATE OR REPLACE FUNCTION get_ciudad(pCIUDAD number)
  SELECT ciudad.NOMBRE
  INTO nombre
  FROM CIUDAD
- WHERE CIUDAD = pCIUDAD;
+ WHERE CIUDAD_id = pCIUDAD;
        RETURN (nombre);
        commit;
        END get_ciudad;
