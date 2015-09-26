@@ -1,0 +1,12 @@
+<td><select multiple>
+  <option value="0">Correr</option>
+  <option value="1">Nadar</option>
+  <option value="2">Andar en bicicleta</option>
+  <option value="3">Futbol</option>
+  <option value="4">Basketbol</option>
+  <option value="5">Beisbol</option>
+  <option value="6">Atletismo</option>
+  <option value="7">Gimnasio</option>
+  <option value="8">Gimnasia</option>
+  <option value="9">Parkour</option>
+</select></td>

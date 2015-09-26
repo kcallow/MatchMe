@@ -1,0 +1,10 @@
+<td><select multiple>
+  <option value="0">Deporte</option>
+  <option value="1">Manualidades</option>
+  <option value="2">Arte y música</option>
+  <option value="3">Juegos de mesa</option>
+  <option value="4">Actividades al aire libre</option>
+  <option value="5">Videojuegos</option>
+  <option value="6">Películas y series</option>
+  <option value="7">Religión</option>
+</select></td>

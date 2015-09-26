@@ -1,0 +1,32 @@
+<td><select multiple>
+  <option value="0">Asatru</option>
+  <option value="1">Bahai</option>
+  <option value="2">Brahamismo</option>
+  <option value="3">Budismo</option>
+  <option value="4">Cao Dai</option>
+  <option value="5">Cristianismo</option>
+  <option value="6">Confucionismo</option>
+  <option value="7">Deismo</option>
+  <option value="8">Druidismo</option>
+  <option value="9">Hinduísmo</option>
+  <option value="10">I. Unitaria Universal</option>
+  <option value="11">Islam</option>
+  <option value="12">Jainismo</option>
+  <option value="13">Judaismo</option>
+  <option value="14">Massai</option>
+  <option value="15">Nuer</option>
+  <option value="16">Oromo</option>
+  <option value="17">Panteismo</option>
+  <option value="18">Rastafarismo</option>
+  <option value="19">Sabaean Mandeans</option>
+  <option value="20">Santa Muerte</option>
+  <option value="21">Shintoismo</option>
+  <option value="22">Shona</option>
+  <option value="23">Sikismo</option>
+  <option value="24">Sufismo</option>
+  <option value="25">Taoismo</option>
+  <option value="26">Vudú</option>
+  <option value="27">Yezidismo</option>
+  <option value="28">Yoruba</option>
+  <option value="29">Zoroastrism</option>
+</select></td>
