@@ -1,8 +1,8 @@
-0	Ciencia y tecnología
+0	Ciencia/Tecnología
 1	Administración
 2	Salud
 3	Educación
 4	Ciencias sociales
-5	Lenguaje y literatura
+5	Lenguaje/Literatura
 6	Política
 7	Derecho

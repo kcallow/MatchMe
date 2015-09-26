@@ -7,12 +7,12 @@ echo "INSERT ALL"
 while read line
 do
 SALARIO_id=$(getField 1)
-TIPO=$(getField 2)
+RANGO=$(getField 2)
 cat <<- EOF
 into SALARIO
-(SALARIO_id, TIPO)
+(SALARIO_id, RANGO)
 values
-($SALARIO_id, '$TIPO')
+($SALARIO_id, '$RANGO')
 EOF
 done
 echo "SELECT 1 from DUAL;"

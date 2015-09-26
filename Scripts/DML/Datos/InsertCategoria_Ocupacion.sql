@@ -2,7 +2,7 @@ INSERT ALL
 into CATEGORIA_OCUPACION
 (CATEGORIA_OCUPACION_id, NOMBRE)
 values
-(0, 'Ciencia y tecnología')
+(0, 'Ciencia/Tecnología')
 into CATEGORIA_OCUPACION
 (CATEGORIA_OCUPACION_id, NOMBRE)
 values
@@ -22,7 +22,7 @@ values
 into CATEGORIA_OCUPACION
 (CATEGORIA_OCUPACION_id, NOMBRE)
 values
-(5, 'Lenguaje y literatura')
+(5, 'Lenguaje/Literatura')
 into CATEGORIA_OCUPACION
 (CATEGORIA_OCUPACION_id, NOMBRE)
 values
