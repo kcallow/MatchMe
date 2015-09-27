@@ -1,4 +1,4 @@
-INSERT ALL
+﻿INSERT ALL
 into SALARIO
 (SALARIO_id, RANGO)
 values
@@ -83,4 +83,5 @@ into SALARIO
 (SALARIO_id, RANGO)
 values
 (20, 'Más de 10.000.000')
+(4, 'M�s de 55')
 SELECT 1 from DUAL;
