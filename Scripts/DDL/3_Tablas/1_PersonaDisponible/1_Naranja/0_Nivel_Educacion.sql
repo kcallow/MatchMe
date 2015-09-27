@@ -26,3 +26,5 @@ alter table NIVEL_EDUCACION
 alter table NIVEL_EDUCACION
   add constraint NIVEL_EDUCACION_GRADO_NN
   check ("GRADO" IS NOT NULL);
+alter table NIVEL_EDUCACION
+  modify GRADO	VARCHAR2(50);
