@@ -6,3 +6,5 @@ CONSTRAINT fk_perdispxMascota_perdisp FOREIGN KEY (username,es_real) REFERENCES 
 Mascota_id		NUMBER,
 CONSTRAINT fk_perdispxMascota_Mascota FOREIGN KEY (Mascota_id) REFERENCES Mascota(Mascota_id)
 );
+alter table PERSONA_DISPONIBLEXMascota
+  add CANTIDAD NUMBER NOT NULL;
