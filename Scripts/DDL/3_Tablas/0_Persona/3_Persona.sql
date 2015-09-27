@@ -20,5 +20,5 @@ alter table PERSONA
 
 alter table PERSONA
   modify slogan		VARCHAR2(500);
-alter table PERSONA_DISPONIBLE
+alter table PERSONA
   modify segundo_apellido VARCHAR2(50);
