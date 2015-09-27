@@ -42,7 +42,7 @@ values
 into RELIGION
 (RELIGION_id, NOMBRE)
 values
-(10, 'I. Unitaria Universal')
+(10, 'I. Unit. Universal')
 into RELIGION
 (RELIGION_id, NOMBRE)
 values

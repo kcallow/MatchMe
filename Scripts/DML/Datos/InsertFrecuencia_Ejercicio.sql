@@ -6,11 +6,11 @@ values
 into FRECUENCIA_EJERCICIO
 (FRECUENCIA_EJERCICIO_id, RANGO)
 values
-(1, '3-5 veces a la semana')
+(1, '3-5 veces por semana')
 into FRECUENCIA_EJERCICIO
 (FRECUENCIA_EJERCICIO_id, RANGO)
 values
-(2, '1-2 veces a la semana')
+(2, '1-2 veces por semana')
 into FRECUENCIA_EJERCICIO
 (FRECUENCIA_EJERCICIO_id, RANGO)
 values
