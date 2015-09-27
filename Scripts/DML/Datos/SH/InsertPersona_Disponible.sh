@@ -22,7 +22,7 @@ peso=$(getField 13)
 num_hijos=$(getField 14)
 quiere_hijos=$(getField 15)
 cat <<- EOF
-INTO PERSONA_DISPONIBLE (username, es_real, color_ojos_id, color_piel_id, contextura_id, nivel_educacion_id, estado_civil_id, fumador_id, bebedor) VALUES ('${username}', '${es_real}', ${color_ojos_id}, ${color_piel_id}, ${contextura_id}, ${nivel_educacion_id}, ${estado_civil_id}, ${fumador_id}, ${bebedor_id}, $frecuencia_ejercicio_id, $salario_id, $altura, $peso, $num_hijos, '${quiere_hijos}')
+INTO PERSONA_DISPONIBLE (username, es_real, color_ojos_id, color_piel_id, contextura_id, nivel_educacion_id, estado_civil_id, fumador_id, bebedor, frecuencia_ejercicio_id, salario_id, altura, peso, num_hijos, quiere_hijos) VALUES ('${username}', '${es_real}', ${color_ojos_id}, ${color_piel_id}, ${contextura_id}, ${nivel_educacion_id}, ${estado_civil_id}, ${fumador_id}, ${bebedor_id}, $frecuencia_ejercicio_id, $salario_id, $altura, $peso, $num_hijos, '${quiere_hijos}')
 EOF
 done
 echo "SELECT 1 from DUAL;"
