@@ -2,7 +2,7 @@ INSERT ALL
 into BEBEDOR
 (BEBEDOR_id, TIPO)
 values
-(0, 'Todos los dÃ­as')
+(0, 'Todos los días')
 into BEBEDOR
 (BEBEDOR_id, TIPO)
 values
@@ -19,4 +19,8 @@ into BEBEDOR
 (BEBEDOR_id, TIPO)
 values
 (4, 'Rara vez')
+into BEBEDOR
+(BEBEDOR_id, TIPO)
+values
+(5, 'Nunca')
 SELECT 1 from DUAL;

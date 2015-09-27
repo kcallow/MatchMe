@@ -2,11 +2,11 @@ INSERT ALL
 into CATEGORIA_OCUPACION
 (CATEGORIA_OCUPACION_id, NOMBRE)
 values
-(0, 'Ciencia/TecnologÃ­a')
+(0, 'Ciencia/Tecnología')
 into CATEGORIA_OCUPACION
 (CATEGORIA_OCUPACION_id, NOMBRE)
 values
-(1, 'AdministraciÃ³n')
+(1, 'Administración')
 into CATEGORIA_OCUPACION
 (CATEGORIA_OCUPACION_id, NOMBRE)
 values
@@ -14,7 +14,7 @@ values
 into CATEGORIA_OCUPACION
 (CATEGORIA_OCUPACION_id, NOMBRE)
 values
-(3, 'EducaciÃ³n')
+(3, 'Educación')
 into CATEGORIA_OCUPACION
 (CATEGORIA_OCUPACION_id, NOMBRE)
 values
@@ -26,7 +26,7 @@ values
 into CATEGORIA_OCUPACION
 (CATEGORIA_OCUPACION_id, NOMBRE)
 values
-(6, 'PolÃ­tica')
+(6, 'Política')
 into CATEGORIA_OCUPACION
 (CATEGORIA_OCUPACION_id, NOMBRE)
 values

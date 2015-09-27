@@ -10,5 +10,5 @@ values
 into GENERO
 (GENERO_id, NOMBRE)
 values
-(2, 'Indefinido')
+(2, 'Otro')
 SELECT 1 from DUAL;

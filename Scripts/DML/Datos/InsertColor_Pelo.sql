@@ -2,7 +2,7 @@ INSERT ALL
 into COLOR_PELO
 (COLOR_PELO_id, NOMBRE)
 values
-(0, 'CafÃ©')
+(0, 'Café')
 into COLOR_PELO
 (COLOR_PELO_id, NOMBRE)
 values

@@ -2,7 +2,7 @@ INSERT ALL
 into FUMADOR
 (FUMADOR_id, TIPO)
 values
-(0, 'Todos los dÃ­as')
+(0, 'Todos los días')
 into FUMADOR
 (FUMADOR_id, TIPO)
 values
@@ -19,4 +19,8 @@ into FUMADOR
 (FUMADOR_id, TIPO)
 values
 (4, 'Rara vez')
+into FUMADOR
+(FUMADOR_id, TIPO)
+values
+(5, 'Nunca')
 SELECT 1 from DUAL;
