@@ -1,4 +1,3 @@
-
 ki	0
 gago	1
 jua345	2

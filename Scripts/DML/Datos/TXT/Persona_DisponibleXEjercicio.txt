@@ -30,4 +30,3 @@ jugorta	1
 faas	0
 lopiunes	9
 grepa	8
-

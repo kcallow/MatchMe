@@ -2,15 +2,15 @@ INSERT ALL
 into OCUPACION
 (OCUPACION_id, NOMBRE)
 values
-(0, 'Ingeniero informático')
+(0, 'Ing. informático')
 into OCUPACION
 (OCUPACION_id, NOMBRE)
 values
-(1, 'Mantenimiento electromecánico')
+(1, 'Mante. electromec.')
 into OCUPACION
 (OCUPACION_id, NOMBRE)
 values
-(2, 'Administrador público')
+(2, 'Admin. público')
 into OCUPACION
 (OCUPACION_id, NOMBRE)
 values
@@ -42,7 +42,7 @@ values
 into OCUPACION
 (OCUPACION_id, NOMBRE)
 values
-(10, 'Profesor de filosofía')
+(10, 'Prof. de filosofía')
 into OCUPACION
 (OCUPACION_id, NOMBRE)
 values

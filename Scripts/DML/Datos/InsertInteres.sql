@@ -94,5 +94,5 @@ values
 into INTERES
 (INTERES_id, NOMBRE)
 values
-(23, 'Comer espagueti con albóndigas')
+(23, 'Comer espagueti y albóndigas')
 SELECT 1 from DUAL;

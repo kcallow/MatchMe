@@ -18,7 +18,7 @@ values
 into CATEGORIA_INTERES
 (CATEGORIA_INTERES_id, NOMBRE)
 values
-(4, 'Actividades al aire libre')
+(4, 'Al aire libre')
 into CATEGORIA_INTERES
 (CATEGORIA_INTERES_id, NOMBRE)
 values
