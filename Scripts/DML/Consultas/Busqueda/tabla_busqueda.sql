@@ -1,0 +1,26 @@
+CREATE GLOBAL TEMPORARY TABLE TABLA_BUSQUEDA (
+  username		VARCHAR2(10),
+  es_admin		VARCHAR2(1),
+  nacimiento		DATE,
+  primer_apellido 	VARCHAR2(30),
+  segundo_apellido 	VARCHAR2(30),
+  nombre		VARCHAR2(40),
+  genero_id		NUMBER,
+  ciudad_id		NUMBER,
+  slogan		VARCHAR2(500),
+  es_real		VARCHAR2(1),  
+  color_ojos_id 	NUMBER,      
+  color_piel_id 	NUMBER,      
+  contextura_id 	NUMBER,      
+  nivel_educacion_id 	NUMBER,      
+  estado_civil_id 	NUMBER,      
+  fumador_id 		NUMBER,      
+  bebedor_id 		NUMBER,      
+  frecuencia_ejercicio_id 	NUMBER,      
+  salario_id 		NUMBER,      
+  altura		NUMBER,
+  peso		NUMBER,
+  num_hijos	NUMBER,
+  quiere_hijos	VARCHAR2(1)
+)
+/
