@@ -1,4 +1,4 @@
-create table WINK
+create table RELACION
 (
   persona1		VARCHAR2(10),
   CONSTRAINT fk_wink_persona_emisor FOREIGN KEY (persona1) REFERENCES PERSONA(username),
