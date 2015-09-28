@@ -32,7 +32,8 @@ insert into tabla_busqueda (username, es_admin, nacimiento, primer_apellido, seg
   SELECT persona.username, persona.es_admin, persona.nacimiento, persona.primer_apellido, persona.segundo_apellido, persona.nombre, persona.genero_id, persona.ciudad_id, persona.slogan, persona_disponible.es_real, persona_disponible.color_ojos_id, persona_disponible.color_piel_id, persona_disponible.contextura_id, persona_disponible.nivel_educacion_id, persona_disponible.estado_civil_id, persona_disponible.fumador_id, persona_disponible.bebedor_id, persona_disponible.frecuencia_ejercicio_id, persona_disponible.salario_id, persona_disponible.altura, persona_disponible.peso, persona_disponible.num_hijos, persona_disponible.quiere_hijos
   FROM PERSONA, PERSONA_DISPONIBLE
   WHERE PERSONA.USERNAME = PERSONA_DISPONIBLE.USERNAME 
-  OR PERSONA.nacimiento >= pNACIMIENTO_MIN 
+  AND
+( PERSONA.nacimiento >= pNACIMIENTO_MIN 
   OR PERSONA.nacimiento <= pNACIMIENTO_MAX 
   OR PERSONA.primer_apellido = pprimer_apellido
   OR PERSONA.segundo_apellido = psegundo_apellido
@@ -57,6 +58,6 @@ insert into tabla_busqueda (username, es_admin, nacimiento, primer_apellido, seg
   OR PERSONA_DISPONIBLE.NUM_HIJOS >= pNUM_HIJOS_MIN
   OR PERSONA_DISPONIBLE.NUM_HIJOS <= pNUM_HIJOS_MAX
   OR PERSONA_DISPONIBLE.QUIERE_HIJOS = pQUIERE_HIJOS
-  ;
+)  ;
 END;
 /
