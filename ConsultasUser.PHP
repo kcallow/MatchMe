@@ -1,5 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 <head>
         <link rel="shortcut icon" href="images\favicon.ico" >
    		<link rel="icon" type="image/gif" href="images\animated_favicon1.gif" >
@@ -13,6 +12,42 @@
 <script type="text/javascript" src="js/cuf_run.js"></script>
 </head>
 <body>
+
+<?php // CONEXION Y VARIABLES
+$c = oci_connect("ge", "ge", "localhost/BDMATCHME");
+
+$array_INTERES = oci_parse($c, 'SELECT * FROM INTERES');
+oci_execute($array_INTERES);
+
+$array_EDAD = oci_parse($c, 'SELECT * FROM EDAD');
+oci_execute($array_EDAD);
+
+$array_GENERO = oci_parse($c, 'SELECT * FROM GENERO');
+oci_execute($array_GENERO);
+
+$array_PAIS = oci_parse($c, 'SELECT * FROM PAIS');
+oci_execute($array_PAIS);
+
+$array_CIUDAD = oci_parse($c, 'SELECT * FROM CIUDAD');
+oci_execute($array_CIUDAD);
+
+$array_ESTADO_CIVIL = oci_parse($c, 'SELECT * FROM ESTADO_CIVIL');
+oci_execute($array_ESTADO_CIVIL);
+
+$array_NIVEL_EDUCACION = oci_parse($c, 'SELECT * FROM NIVEL_EDUCACION');
+oci_execute($array_NIVEL_EDUCACION);
+
+$array_CONTEXTURA = oci_parse($c, 'SELECT * FROM CONTEXTURA');
+oci_execute($array_CONTEXTURA);
+
+$array_COLOR_OJOS = oci_parse($c, 'SELECT * FROM COLOR_OJOS');
+oci_execute($array_COLOR_OJOS);
+
+$array_COLOR_PELO = oci_parse($c, 'SELECT * FROM COLOR_PELO');
+oci_execute($array_COLOR_PELO);
+
+
+?>  
 <div class="main">
   <div class="main_resize">
     <div class="header">
@@ -70,60 +105,68 @@
 		  <th>Nivel más alto de educación</th>
 		</tr>
 		<tr>
-		<td><select multiple>
-		  <option value="0">18-25</option>
-		  <option value="1">26-35</option>
-		  <option value="2">36-45</option>
-		  <option value="3">46-55</option>
-		  <option value="4">56-65</option>
-		  <option value="5">66+</option>
-		</select></td>
-		<td><select multiple>
-		  <option value="0">Femenino</option>
-		  <option value="1">Masculino</option>
-		  <option value="2">Indefinido</option>
-		</select></td>
-		<td><select multiple>
-		  
-		  <option value="0">Costa Rica</option>
-		  <option value="1">Nicaragua</option>
-		  <option value="2">Panamá</option>
-		  <option value="3">Honduras</option>
-		  <option value="4">El Salvador</option>
-		</select></td>
-		<td><select multiple>
-		  
-		  <option value="0">San José</option>
-		  <option value="1">Heredia</option>
-		  <option value="2">Alajuela</option>
-		  <option value="3">Cartago</option>
-		  <option value="4">Liberia</option>
-		</select></td>
-		<td><select multiple>
-		  
-		  <option value="0">Casado</option>
-		  <option value="1">Soltero</option>
-		  <option value="2">Unión libre</option>
-		</select></td>
-		<td><select multiple>
-		  <option value="0">Kinder completo</option>
-		  <option value="1">Primaria incompleta</option>
-		  <option value="2">Primaria completa</option>
-		  <option value="3">Tercer ciclo incompleto</option>
-		  <option value="4">Tercer ciclo completo</option>
-		  <option value="5">Educación diversificada incompleta</option>
-		  <option value="6">Educación diversificada completa</option>
-		  <option value="7">Técnico o diplomado incompleto</option>
-		  <option value="8">Técnico o diplomado completo</option>
-		  <option value="9">Bachillerato universitario incompleto</option>
-		  <option value="10">Bachillerato universitario completo</option>
-		  <option value="11">Licenciatura incompleta</option>
-		  <option value="12">Licenciatura completa</option>
-		  <option value="13">Maestría incompleta</option>
-		  <option value="14">Maestría completa</option>
-		  <option value="15">Doctorado incompleto</option>
-		  <option value="16">Doctorado completo</option>
-		</select></td>
+		<td>
+		<?php
+echo "<select MULTIPLE name=\"combo_edad\">";
+while (OCIFetch($array_EDAD))//Ciclo para recorrer la tabla
+{
+$campo_EDAD=OCIResult($array_EDAD,2);//aca va la columna
+echo "<option value=\"$campo_EDAD\">$campo_EDAD</option>";
+}
+echo "</select>";
+?>
+</td>
+
+		<td>		
+		<?php
+echo "<select MULTIPLE name=\"combo_genero\">";
+while (OCIFetch($array_GENERO))//Ciclo para recorrer la tabla
+{
+$campo_GENERO=OCIResult($array_GENERO,2);//aca va la columna
+echo "<option value=\"$campo_GENERO\">$campo_GENERO</option>";
+}
+echo "</select>";
+?></td>
+
+		<td><?php
+echo "<select MULTIPLE name=\"combo_PAIS\">";
+while (OCIFetch($array_PAIS))//Ciclo para recorrer la tabla
+{
+$campo_PAIS=OCIResult($array_PAIS,2);//aca va la columna
+echo "<option value=\"$campo_PAIS\">$campo_PAIS</option>";
+}
+echo "</select>";
+?></td>
+		<td><?php
+echo "<select MULTIPLE name=\"combo_CIUDAD\">";
+while (OCIFetch($array_CIUDAD))//Ciclo para recorrer la tabla
+{
+$campo_CIUDAD=OCIResult($array_CIUDAD,2);//aca va la columna
+echo "<option value=\"$campo_CIUDAD\">$campo_CIUDAD</option>";
+}
+echo "</select>";
+?></td>
+
+
+		<td><?php
+echo "<select MULTIPLE name=\"combo_ESTADO_CIVIL\">";
+while (OCIFetch($array_ESTADO_CIVIL))//Ciclo para recorrer la tabla
+{
+$campo_ESTADO_CIVIL=OCIResult($array_ESTADO_CIVIL,2);//aca va la columna
+echo "<option value=\"$campo_ESTADO_CIVIL\">$campo_ESTADO_CIVIL</option>";
+}
+echo "</select>";
+?></td>
+
+		<td><?php
+echo "<select MULTIPLE name=\"combo_NIVEL_EDUCACION\">";
+while (OCIFetch($array_NIVEL_EDUCACION))//Ciclo para recorrer la tabla
+{
+$campo_NIVEL_EDUCACION=OCIResult($array_NIVEL_EDUCACION,2);//aca va la columna
+echo "<option value=\"$campo_NIVEL_EDUCACION\">$campo_NIVEL_EDUCACION</option>";
+}
+echo "</select>";
+?></td>
 		</table>
 		<br>
 		<table>
@@ -135,13 +178,15 @@
 		  <th>Color de pelo</th>
 		</tr>
 		<tr>
-		<td><select multiple>
-		  <option value="0">Muy gruesa</option>
-		  <option value="1">Gruesa</option>
-		  <option value="2">Ni sobra ni falta</option>
-		  <option value="3">Delgada</option>
-		  <option value="4">Muy delgada</option>
-		</select></td>
+		<td><?php
+echo "<select MULTIPLE name=\"combo_CONTEXTURA\">";
+while (OCIFetch($array_CONTEXTURA))//Ciclo para recorrer la tabla
+{
+$campo_CONTEXTURA=OCIResult($array_CONTEXTURA,2);//aca va la columna
+echo "<option value=\"$campo_CONTEXTURA\">$campo_CONTEXTURA</option>";
+}
+echo "</select>";
+?></td>
 		<td><select multiple>
 		  <option value="0">Menos que 140</option>
 		  <option value="1">141-150</option>
@@ -188,24 +233,24 @@
 		  <option value="32">196-200</option>
 		  <option value="33">201 o más</option>
 		</select></td>
-		<td><select multiple>
-		  <option value="0">Verde</option>
-		  <option value="1">Café</option>
-		  <option value="2">Gris</option>
-		  <option value="3">Negro</option>
-		  <option value="4">Azul</option>
-		</select></td>
-		<td><select multiple>
-		  <option value="0">Café</option>
-		  <option value="1">Blanco</option>
-		  <option value="2">Negro</option>
-		  <option value="3">Rubio claro</option>
-		  <option value="4">Rubio oscuro</option>
-		  <option value="5">Rojo</option>
-		  <option value="6">Azul</option>
-		  <option value="7">Verde</option>
-		  <option value="8">Rosado</option>
-		</select></td>
+		<td><?php
+echo "<select MULTIPLE name=\"combo_COLOR_OJOS\">";
+while (OCIFetch($array_COLOR_OJOS))//Ciclo para recorrer la tabla
+{
+$campo_COLOR_OJOS=OCIResult($array_COLOR_OJOS,2);//aca va la columna
+echo "<option value=\"$campo_COLOR_OJOS\">$campo_COLOR_OJOS</option>";
+}
+echo "</select>";
+?></td>
+		<td><?php
+echo "<select MULTIPLE name=\"combo_COLOR_PELO\">";
+while (OCIFetch($array_COLOR_OJOS))//Ciclo para recorrer la tabla
+{
+$campo_COLOR_OJOS=OCIResult($array_COLOR_OJOS,2);//aca va la columna
+echo "<option value=\"$campo_COLOR_OJOS\">$campo_COLOR_OJOS</option>";
+}
+echo "</select>";
+?></td>
 		</table>
 		<br>
 		<table>
@@ -402,32 +447,19 @@
 		  <option value="6">Películas y series</option>
 		  <option value="7">Religión</option>
 		</select></td>
-		<td><select multiple>
-		  <option value="0">Futbol</option>
-		  <option value="1">Basketball</option>
-		  <option value="2">Golf</option>
-		  <option value="3">Tennis</option>
-		  <option value="4">Hacer country</option>
-		  <option value="5">Coser</option>
-		  <option value="6">Quilting</option>
-		  <option value="7">Dibujar comics</option>
-		  <option value="8">Pintar</option>
-		  <option value="9">Tocar música</option>
-		  <option value="10">Cantar karaoke</option>
-		  <option value="11">White water rafting</option>
-		  <option value="12">Pesca</option>
-		  <option value="13">Cacería</option>
-		  <option value="14">First person shooter</option>
-		  <option value="15">Arcade</option>
-		  <option value="16">Plataformas</option>
-		  <option value="17">Videojuegos indies</option>
-		  <option value="18">Pornografía sadomasoquista</option>
-		  <option value="19">Películas románticas</option>
-		  <option value="20">Bollywood</option>
-		  <option value="21">Pastoral juvenil</option>
-		  <option value="22">Sacrificio humano precolombino</option>
-		  <option value="23">Comer espagueti con albóndigas</option>
-		</select></td>
+		<td>
+<?php
+echo "<select MULTIPLE name=\"combo_prueba\">";
+while (OCIFetch($array_INTERES))//Ciclo para recorrer la tabla
+{
+$campo_interes=OCIResult($array_INTERES,2);//aca va la columna
+echo "<option value=\"$campo_interes\">$campo_interes</option>";
+}
+echo "</select>";
+?>
+
+	
+		</td>
 		</table>
 		<br>
 		<b>Mascotas:</b> <br> <br>
@@ -595,6 +627,7 @@
         <div class="clr"></div>
       </div>
     </div>
+  </div>
   </div>
 </body>
 </html>
