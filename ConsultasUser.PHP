@@ -244,10 +244,10 @@ echo "</select>";
 ?></td>
 		<td><?php
 echo "<select MULTIPLE name=\"combo_COLOR_PELO\">";
-while (OCIFetch($array_COLOR_OJOS))//Ciclo para recorrer la tabla
+while (OCIFetch($array_COLOR_PELO))//Ciclo para recorrer la tabla
 {
-$campo_COLOR_OJOS=OCIResult($array_COLOR_OJOS,2);//aca va la columna
-echo "<option value=\"$campo_COLOR_OJOS\">$campo_COLOR_OJOS</option>";
+$campo_COLOR_PELO=OCIResult($array_COLOR_PELO,2);//aca va la columna
+echo "<option value=\"$campo_COLOR_PELO\">$campo_COLOR_PELO</option>";
 }
 echo "</select>";
 ?></td>
