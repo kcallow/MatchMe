@@ -46,22 +46,53 @@ oci_execute($array_COLOR_OJOS);
 $array_COLOR_PELO = oci_parse($c, 'SELECT * FROM COLOR_PELO');
 oci_execute($array_COLOR_PELO);
 
+$array_IDIOMA = oci_parse($c, 'SELECT * FROM IDIOMA');
+oci_execute($array_IDIOMA);
+
+$array_RELIGION = oci_parse($c, 'SELECT * FROM RELIGION');
+oci_execute($array_RELIGION);
+
+$array_FUMADOR = oci_parse($c, 'SELECT * FROM FUMADOR');
+oci_execute($array_FUMADOR);
+
+$array_BEBEDOR = oci_parse($c, 'SELECT * FROM BEBEDOR');
+oci_execute($array_BEBEDOR);
+
+$array_FRECUENCIA_EJERCICIO = oci_parse($c, 'SELECT * FROM FRECUENCIA_EJERCICIO');
+oci_execute($array_FRECUENCIA_EJERCICIO);
+
+$array_CATEGORIA_OCUPACION = oci_parse($c, 'SELECT * FROM CATEGORIA_OCUPACION');
+oci_execute($array_CATEGORIA_OCUPACION);
+
+$array_OCUPACION = oci_parse($c, 'SELECT * FROM OCUPACION');
+oci_execute($array_OCUPACION);
+
+$array_SALARIO = oci_parse($c, 'SELECT * FROM SALARIO');
+oci_execute($array_SALARIO);
+
+$array_EJERCICIO = oci_parse($c, 'SELECT * FROM EJERCICIO');
+oci_execute($array_EJERCICIO);
+
+$array_CATEGORIA_INTERES = oci_parse($c, 'SELECT * FROM CATEGORIA_INTERES');
+oci_execute($array_CATEGORIA_INTERES);
+
+
 
 ?>  
 <div class="main">
   <div class="main_resize">
     <div class="header">
       <div class="logo">
-        <h1><a href="PantallaUsuarioHtml.html"><span>Match</span>Me.com<small>Free Dating website</small></a> </h1>
+        <h1><a href="PantallaUsuarioHtml.PHP"><span>Match</span>Me.com<small>Free Dating website</small></a> </h1>
       </div>
       <div class="clr"></div>
       <div class="menu_nav">
         <ul>
-          <li><a href="PantallaUsuarioHtml.html">Inicio</a></li>
+          <li><a href="PantallaUsuarioHtml.PHP">Inicio</a></li>
          
-           <li><a href="Match.html">Match</a></li>
-          <li><a href="Perfil.html">Perfil</a></li>
-          <li><a href="index.html">Salir</a></li>
+           <li><a href="Match.PHP">Match</a></li>
+          <li><a href="Perfil.PHP">Perfil</a></li>
+          <li><a href="index.PHP">Salir</a></li>
         </ul>
         <div class="clr"></div>
       </div>
@@ -262,75 +293,54 @@ echo "</select>";
 		  <th>Frecuencia en que se ejercita</th>
 		</tr>
 		<tr>
-		<td><select multiple>
-		<option value="0">Chino</option>
-		<option value="1">Inglés</option>
-		<option value="2">Hindi</option>
-		<option value="3">Español</option>
-		<option value="4">Ruso</option>
-		<option value="5">Árabe</option>
-		<option value="6">Bengalí</option>
-		<option value="7">Portugués</option>
-		<option value="8">Indonesio</option>
-		<option value="9">Francés</option>
-		<option value="10">Japonés</option>
-		<option value="11">Alemán</option>
-		<option value="12">Turco</option>
-		</select></td>
+		<td>
+		<?php
+echo "<select MULTIPLE name=\"combo_IDIOMA\">";
+while (OCIFetch($array_IDIOMA))//Ciclo para recorrer la tabla
+{
+$campo_IDIOMA=OCIResult($array_IDIOMA,2);//aca va la columna
+echo "<option value=\"$campo_IDIOMA\">$campo_IDIOMA</option>";
+}
+echo "</select>";
+?>
+</td>
 
-		<td><select multiple>
-		<option value="0">Asatru</option>
-		<option value="1">Bahai</option>
-		<option value="2">Brahamismo</option>
-		<option value="3">Budismo</option>
-		<option value="4">Cao Dai</option>
-		<option value="5">Cristianismo</option>
-		<option value="6">Confucionismo</option>
-		<option value="7">Deismo</option>
-		<option value="8">Druidismo</option>
-		<option value="9">Hinduísmo</option>
-		<option value="10">I. Unitaria Universal</option>
-		<option value="11">Islam</option>
-		<option value="12">Jainismo</option>
-		<option value="13">Judaismo</option>
-		<option value="14">Massai</option>
-		<option value="15">Nuer</option>
-		<option value="16">Oromo</option>
-		<option value="17">Panteismo</option>
-		<option value="18">Rastafarismo</option>
-		<option value="19">Sabaean Mandeans</option>
-		<option value="20">Santa Muerte</option>
-		<option value="21">Shintoismo</option>
-		<option value="22">Shona</option>
-		<option value="23">Sikismo</option>
-		<option value="24">Sufismo</option>
-		<option value="25">Taoismo</option>
-		<option value="26">Vudú</option>
-		<option value="27">Yezidismo</option>
-		<option value="28">Yoruba</option>
-		<option value="29">Zoroastrism</option>
-		<td><select multiple>
-		<option value="0">Todos los días</option>
-		<option value="1">Semanalmente</option>
-		<option value="2">Mensualmente</option>
-		<option value="3">Cada 3-6 meses</option>
-		<option value="4">Rara vez</option>
-		</select></td>
-		<td><select multiple>
-		<option value="0">Todos los días</option>
-		<option value="1">Semanalmente</option>
-		<option value="2">Mensualmente</option>
-		<option value="3">Cada 3-6 meses</option>
-		<option value="4">Rara vez</option>
-		</select></td>
-		<td><select multiple>
-		<option value="0">Todos los días</option>
-		<option value="1">3-5 veces a la semana</option>
-		<option value="2">1-2 veces a la semana</option>
-		<option value="3">Cada 2-3 semanas</option>
-		<option value="4">Cada 1-2 meses</option>
-		<option value="5">Rara vez</option>
-		</select></td>
+		<td>		<?php
+echo "<select MULTIPLE name=\"combo_RELIGION\">";
+while (OCIFetch($array_RELIGION))//Ciclo para recorrer la tabla
+{
+$campo_RELIGION=OCIResult($array_RELIGION,2);//aca va la columna
+echo "<option value=\"$campo_RELIGION\">$campo_RELIGION</option>";
+}
+echo "</select>";
+?></td>
+		<td>		<?php
+echo "<select MULTIPLE name=\"combo_FUMADOR\">";
+while (OCIFetch($array_FUMADOR))//Ciclo para recorrer la tabla
+{
+$campo_FUMADOR=OCIResult($array_FUMADOR,2);//aca va la columna
+echo "<option value=\"$campo_FUMADOR\">$campo_FUMADOR</option>";
+}
+echo "</select>";
+?></td>
+		<td><?php
+echo "<select MULTIPLE name=\"combo_BEBEDOR\">";
+while (OCIFetch($array_BEBEDOR))//Ciclo para recorrer la tabla
+{
+$campo_BEBEDOR=OCIResult($array_BEBEDOR,2);//aca va la columna
+echo "<option value=\"$campo_BEBEDOR\">$campo_BEBEDOR</option>";
+}
+echo "</select>";
+?></td>
+		<td><?php
+echo "<select MULTIPLE name=\"combo_FREQUENCIA_EJERCICIO\">";
+while (OCIFetch($array_FRECUENCIA_EJERCICIO))//Ciclo para recorrer la tabla
+{
+$campo_FRECUENCIA_EJERCICIO=OCIResult($array_FRECUENCIA_EJERCICIO,2);//aca va la columna
+echo "<option value=\"$campo_FREQUENCIA_EJERCICIO\">$campo_FRECUENCIA_EJERCICIO</option>";
+}
+echo "</select>";
+?></td>
 		</table>
 		<br>
 		<table>
@@ -367,57 +377,33 @@ echo "</select>";
 		  <option value="0">Sí</option>
 		  <option value="1">No</option>
 		</select></td>
-		<td><select multiple>
-		<option value="0">Ciencia y tecnología</option>
-		<option value="1">Administración</option>
-		<option value="2">Salud</option>
-		<option value="3">Educación</option>
-		<option value="4">Ciencias sociales</option>
-		<option value="5">Lenguaje y literatura</option>
-		<option value="6">Política</option>
-		<option value="7">Derecho</option>
-		</select></td>
-		<td><select multiple>
-		<option value="0">Ingeniero informático</option>
-		<option value="1">Mantenimiento electromecánico</option>
-		<option value="2">Administrador público</option>
-		<option value="3">Auditor contable</option>
-		<option value="4">Farmacólogo</option>
-		<option value="5">Enfermero</option>
-		<option value="6">Gerontólogo</option>
-		<option value="7">Maestro de kinder</option>
-		<option value="8">Sociólogo</option>
-		<option value="9">Antropólogo</option>
-		<option value="10">Profesor de filosofía</option>
-		<option value="11">Lingüista</option>
-		<option value="12">Presidente</option>
-		<option value="13">Diputado</option>
-		<option value="14">Juez</option>
-		<option value="15">Notario</option>
-		</select></td>
-		<td><select multiple>
-		<option value="0">Menos de 100.000</option>
-		<option value="1">100.000-250.000</option>
-		<option value="2">250.000-500.000</option>
-		<option value="3">500.000-750.000</option>
-		<option value="4">750.000-1.000.000</option>
-		<option value="5">1.000.000-1.250.000</option>
-		<option value="6">1.250.000-1.500.000</option>
-		<option value="7">1.500.000-1.750.000</option>
-		<option value="8">1.750.000-2.000.000</option>
-		<option value="9">2.000.000-2.500.000</option>
-		<option value="10">2.500.000-3.000.000</option>
-		<option value="11">3.000.000-3.500.000</option>
-		<option value="12">3.500.000-4.000.000</option>
-		<option value="13">4.000.000-4.500.000</option>
-		<option value="14">4.500.000-5.000.000</option>
-		<option value="15">5.000.000-6.000.000</option>
-		<option value="16">6.000.000-7.000.000</option>
-		<option value="17">7.000.000-8.000.000</option>
-		<option value="18">8.000.000-9.000.000</option>
-		<option value="19">9.000.000-10.000.000</option>
-		<option value="20">Más de 10.000.000</option>
-		</select></td>
+		<td><?php
+echo "<select MULTIPLE name=\"combo_CATEGORIA_OCUPACION\">";
+while (OCIFetch($array_CATEGORIA_OCUPACION))//Ciclo para recorrer la tabla
+{
+$campo_CATEGORIA_OCUPACION=OCIResult($array_CATEGORIA_OCUPACION,2);//aca va la columna
+echo "<option value=\"$campo_CATEGORIA_OCUPACION\">$campo_CATEGORIA_OCUPACION</option>";
+}
+echo "</select>";
+?></td>
+		<td><?php
+echo "<select MULTIPLE name=\"combo_OCUPACION\">";
+while (OCIFetch($array_OCUPACION))//Ciclo para recorrer la tabla
+{
+$campo_OCUPACION=OCIResult($array_OCUPACION,2);//aca va la columna
+echo "<option value=\"$campo_OCUPACION\">$campo_OCUPACION</option>";
+}
+echo "</select>";
+?></td>
+		<td><?php
+echo "<select MULTIPLE name=\"combo_SALARIO\">";
+while (OCIFetch($array_SALARIO))//Ciclo para recorrer la tabla
+{
+$campo_SALARIO=OCIResult($array_SALARIO,2);//aca va la columna
+echo "<option value=\"$campo_SALARIO\">$campo_SALARIO</option>";
+}
+echo "</select>";
+?></td>
 		</table>
 		<table>
 		<tr>
@@ -425,28 +411,24 @@ echo "</select>";
 		  <th>Categorías de Interés</th>
 		  <th>Interés</th>
 		</tr>
-		<td><select multiple>
-		<option value="0">Correr</option>
-		<option value="1">Nadar</option>
-		<option value="2">Andar en bicicleta</option>
-		<option value="3">Futbol</option>
-		<option value="4">Basketbol</option>
-		<option value="5">Beisbol</option>
-		<option value="6">Atletismo</option>
-		<option value="7">Gimnasio</option>
-		<option value="8">Gimnasia</option>
-		<option value="9">Parkour</option>
-		</select></td>
-		<td><select multiple>
-		  <option value="0">Deporte</option>
-		  <option value="1">Manualidades</option>
-		  <option value="2">Arte y música</option>
-		  <option value="3">Juegos de mesa</option>
-		  <option value="4">Actividades al aire libre</option>
-		  <option value="5">Videojuegos</option>
-		  <option value="6">Películas y series</option>
-		  <option value="7">Religión</option>
-		</select></td>
+		<td><?php
+echo "<select MULTIPLE name=\"combo_EJERCICIO\">";
+while (OCIFetch($array_EJERCICIO))//Ciclo para recorrer la tabla
+{
+$campo_EJERCICIO=OCIResult($array_EJERCICIO,2);//aca va la columna
+echo "<option value=\"$campo_EJERCICIO\">$campo_EJERCICIO</option>";
+}
+echo "</select>";
+?></td>
+		<td><?php
+echo "<select MULTIPLE name=\"combo_CATEGORIA_INTERES\">";
+while (OCIFetch($array_CATEGORIA_INTERES))//Ciclo para recorrer la tabla
+{
+$campo_CATEGORIA_INTERES=OCIResult($array_CATEGORIA_INTERES,2);//aca va la columna
+echo "<option value=\"$campo_CATEGORIA_INTERES\">$campo_CATEGORIA_INTERES</option>";
+}
+echo "</select>";
+?></td>
 		<td>
 <?php
 echo "<select MULTIPLE name=\"combo_prueba\">";
