@@ -13,6 +13,13 @@
 <script type="text/javascript" src="js/cuf_run.js"></script>
 </head>
 <body>
+<?php // CONEXION Y VARIABLES
+$c = oci_connect("ge", "ge", "localhost/BDMATCHME");
+
+$array_CIUDAD = oci_parse($c, 'SELECT * FROM CIUDAD');
+oci_execute($array_CIUDAD);
+
+?>
 <div class="main">
   <div class="main_resize">
     <div class="header">
@@ -38,28 +45,46 @@
         <div class="mainbar">
           <div class="article">
             <h2><span>Crear Evento</span></h2><br>
-            <div class="clr"></div>
-                <label id="label_input_26_0" for="input_26_0"> Lugar: </label><br>
+            <form method="post" class="signup" action="ProcesarCrearEvento.php">
+            <fieldset class="textbox">
+        <div class="clr"></div>
+                <label id="label_input_26_0" for="input_26_0"> Título del evento: </label><br>
         <div id="cid_20" class="form-input jf-required">
-          <input type="text" class=" form-textbox validate[required]" data-type="input-textbox" size="20" value="" />
+          <input type="text" name="titulo_evento">
+        </div><br>
+
+            <div class="clr"></div>
+                <label id="label_input_26_0" for="input_26_0"> Ciudad: </label><br>
+        <div id="cid_20" class="form-input jf-required">
+          <td><?php
+echo "<select name=\"combo_CIUDAD\">";
+while (OCIFetch($array_CIUDAD))//Ciclo para recorrer la tabla
+{
+$id_CIUDAD=OCIResult($array_CIUDAD,1);
+$campo_CIUDAD=OCIResult($array_CIUDAD,2);//aca va la columna
+echo "<option value=\"$id_CIUDAD\">$campo_CIUDAD</option>";
+}
+echo "</select>";
+?></td>
         </div><br>
         <div class="clr"></div>
                 <label id="label_input_26_0" for="input_26_0"> Fecha: </label><br>
         <div id="cid_20" class="form-input jf-required">
-          <input type="text" class=" form-textbox validate[required]" data-type="input-textbox" size="20" value="" />
+          <input type="date" name="fecha_evento">
         </div><br>
         <div class="clr"></div>
                 <label id="label_input_26_0" for="input_26_0"> Hora: </label><br>
         <div id="cid_20" class="form-input jf-required">
-          <input type="text" class=" form-textbox validate[required]" data-type="input-textbox" size="20" value="" />
+          <input type="time" name="hora_evento">
         </div><br>
         <div class="clr"></div>
                 <label id="label_input_26_0" for="input_26_0"> Descripcion: </label><br>
         <div id="cid_20" class="form-input jf-required">
-          <input type="text" class=" form-textbox validate[required]" data-type="input-textbox" size="20" value="" />
+         <textarea name="descripcion" rows="10" cols="50"></textarea>
         </div><br>
-              <button> Crear </button>
-              <button> Cancelar </button>
+              <input type="submit" id="go" value="Aceptar" >
+              <input  type="reset" id="cancel"value="Cancelar" >
+            </fieldset>
           </div>
         </div>
         <div class="sidebar">

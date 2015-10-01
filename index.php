@@ -24,7 +24,7 @@
 			</label>
 			<label class="password">
 				<span>Contrase&ntilde;a</span>
-				<input id="password" name="password" value="" type="password" placeholder="Contrase&ntilde;a" required>
+				<input type = "password" id="password" name="password_login" value="" type="password" placeholder="Contrase&ntilde;a" required>
 			</label>
 			<input type="submit" id="go" value="Login Usuario" onClick="window.location.href='PantallaUsuarioHtml.PHP'">			
             <input type="submit" id="go" value="Login Admin" onClick="window.location.href='PantallaAdmin.PHP'">
@@ -49,11 +49,11 @@
 				</label>
 				<label class="password">
 				<span>Contrase&ntilde;a</span><br>
-				<input id="password" name="password" value="" type="password" placeholder="Contrase&ntilde;a" required><br>
+				<input type = "password" id="password" name="password_sign_up" value="" type="password" placeholder="Contrase&ntilde;a" required><br>
 				</label>
 				<label class="retrypassword">
 				<span>Repita su contrase&ntilde;a</span><br>
-				<input id="retry" name="retry" value="" type="password" placeholder="Repetir Contrase&ntilde;a" required><br>
+				<input type = "password" id="retry" name="retry" value="" type="password" placeholder="Repetir Contrase&ntilde;a" required><br>
 				</label>
 				<br>
 				<input type="submit" id="go" value="Registrarse" onClick="window.location.href='Contrato.PHP'">
