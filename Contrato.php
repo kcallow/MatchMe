@@ -20,7 +20,7 @@
 				<span>Contrase&ntilde;a</span>
 				<input id="password" name="password" value="" type="password" placeholder="Contrase&ntilde;a" required>
 			</label>
-			<input type="submit" id="go" value="Login" onClick="window.location.href='PantallaUsuarioHtml.html'">
+			<input type="submit" id="go" value="Login" onClick="window.location.href='PantallaUsuarioHtml.PHP'">
 			</table>
 		</form>
 	</header>
@@ -28,10 +28,10 @@
 			<div class="formulario_registro">
 				<h1>Bienvenido a MatchMe.com</h1>
 				<p>MatchMe.com es un sitio de citas gratuito. El cual no tiene ninguna responsabilidad en los posibles acontecimietos generados por el uso de esta comunidad, y no aceptara ningun tipo de responsabilidad. Al pulsar el boton "Acepto" usted queda bajo su propia responsabilidad, y exonera de alguna responsabilidad a este sitio. </p>
-			<form method="post" class="signup" action="Formularios/Formulario General/RegistroDatos.html">
+			<form method="post" class="signup" action="Formularios/Formulario General/RegistroDatos.PHP">
 				<fieldset class="textbox">
-				<input type="submit" id="go" value="Acepto" onClick="window.location.href='Formularios/Formulario General/RegistroDatos.html'">
-				<input  type="button" id="cancel" value="Cancelar" onClick="window.location.href='Index.html'">
+				<input type="submit" id="go" value="Acepto" onClick="window.location.href='Formularios/Formulario General/RegistroDatos.PHP'">
+				<input  type="button" id="cancel" value="Cancelar" onClick="window.location.href='Index.PHP'">
 				</fieldset>
 			</form>
 			</div>

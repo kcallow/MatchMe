@@ -18,11 +18,11 @@
 	<img src="images/logotipo.png" align="left" width=25%><img src="images/LogoOficialTrans.png" alt="" width="120" height="101" align="right">
       <div class="menu_nav">
         <ul>
-          <li ><a href="PantallaUsuarioHtml.html">Inicio</a></li>
-          <li class="active"><a href="Match.html">Match</a></li>
-          <li><a href="ConsultasUser.html">Búsqueda</a></li>
-          <li ><a href="Perfil.html">Perfil</a></li>
-          <li><a href="index.html">Salir</a></li>
+          <li ><a href="PantallaUsuarioHtml.PHP">Inicio</a></li>
+          <li class="active"><a href="Match.PHP">Match</a></li>
+          <li><a href="ConsultasUser.PHP">Búsqueda</a></li>
+          <li ><a href="Perfil.PHP">Perfil</a></li>
+          <li><a href="index.PHP">Salir</a></li>
         </ul>
         <div class="clr"></div>
       </div>

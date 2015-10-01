@@ -17,16 +17,16 @@
   <div class="main_resize">
     <div class="header">
       <div class="logo">
-        <h1><a href="PantallaInicio.html"><span>Match</span>Me.com<small>Free Dating website</small></a> </h1>
+        <h1><a href="PantallaInicio.PHP"><span>Match</span>Me.com<small>Free Dating website</small></a> </h1>
       </div>
       <div class="clr"></div>
       <div class="menu_nav">
         <ul>
-          <li ><a href="PantallaAdmin.html">Inicio</a></li>
-          <li class="active"><a href="AgregarAdmin.html">Agregar Administrador</a></li>
-          <li><a href="CrearEvento.html">Crear Evento</a></li>
-        <li><a href="ModificarFormularios.html">Modificar Formulario</a></li>
-          <li><a href="index.html">Salir</a></li>
+          <li ><a href="PantallaAdmin.PHP">Inicio</a></li>
+          <li class="active"><a href="AgregarAdmin.PHP">Agregar Administrador</a></li>
+          <li><a href="CrearEvento.PHP">Crear Evento</a></li>
+        <li><a href="ModificarFormularios.PHP">Modificar Formulario</a></li>
+          <li><a href="index.PHP">Salir</a></li>
         </ul>
         <div class="clr"></div>
       </div>
@@ -57,8 +57,8 @@
                     <input id="password" name="password" value="" type="password" placeholder="Repetir Contrase&ntilde;a" required><br>
                     </label>
                     <br>
-                    <input type="submit" id="go" value="Aceptar" onClick="window.location.href='PantallaUsuarioHtml.html'">
-                    <input  type="button" id="cancel"value="Cancelar" onClick="window.location.href='PantallaInicio.html'">
+                    <input type="submit" id="go" value="Aceptar" onClick="window.location.href='PantallaUsuarioHtml.PHP'">
+                    <input  type="button" id="cancel"value="Cancelar" onClick="window.location.href='PantallaInicio.PHP'">
                     </fieldset>
                 </form>
           </div>

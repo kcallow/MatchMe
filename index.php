@@ -15,7 +15,7 @@
         <img src="images/LogoOficialTrans.png" width="3%" height="3%" alt="" align = "right" hspace="10" vspace="5"/>
 		<img src="images/logotipo.png" align="left" width=15%>
 		</a>
-        <form method="post" class="signup" enctype = "text/plain" action="PantallaUsuarioHtml.html">
+        <form method="post" class="signup" enctype = "text/plain" action="PantallaUsuarioHtml.PHP">
 			<table class="textbox" >
 			<label class="username">
 				<span>Usuario</span>
@@ -26,8 +26,8 @@
 				<span>Contrase&ntilde;a</span>
 				<input id="password" name="password" value="" type="password" placeholder="Contrase&ntilde;a" required>
 			</label>
-			<input type="submit" id="go" value="Login Usuario" onClick="window.location.href='PantallaUsuarioHtml.html'">			
-            <input type="submit" id="go" value="Login Admin" onClick="window.location.href='PantallaAdmin.html'">
+			<input type="submit" id="go" value="Login Usuario" onClick="window.location.href='PantallaUsuarioHtml.PHP'">			
+            <input type="submit" id="go" value="Login Admin" onClick="window.location.href='PantallaAdmin.PHP'">
 			</table>
 		</form>
 </header>
@@ -37,7 +37,7 @@
 				<p>Reg&iacute;strese para conocer corazones buscando romance</p>
 			</div>
 			<div class="formulario_registro">
-			<form method="post" class="signup" action="Formularios/Formulario General/RegistroDatos.html">
+			<form method="post" class="signup" action="Formularios/Formulario General/RegistroDatos.PHP">
 				<fieldset class="textbox">
 				<label class="username">
 				<span>Usuario</span><br>
@@ -56,7 +56,7 @@
 				<input id="retry" name="retry" value="" type="password" placeholder="Repetir Contrase&ntilde;a" required><br>
 				</label>
 				<br>
-				<input type="submit" id="go" value="Registrarse" onClick="window.location.href='Contrato.html'">
+				<input type="submit" id="go" value="Registrarse" onClick="window.location.href='Contrato.PHP'">
 				</fieldset>
 			</form>
 			</div>

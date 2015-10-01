@@ -17,17 +17,17 @@
   <div class="main_resize">
     <div class="header">
       <div class="logo">
-        <h1><a href="PantallaAdmin.html"><span>Match</span>Me.com<small>Free Dating website</small></a> </h1>
+        <h1><a href="PantallaAdmin.PHP"><span>Match</span>Me.com<small>Free Dating website</small></a> </h1>
       </div>
       <div class="clr"></div>
       <div class="menu_nav">
         <ul>
-          <li class="active"><a href="PantallaAdmin.html">Inicio</a></li>
-          <li><a href="AgregarAdmin.html">Agregar Administrador</a></li>
-          <li><a href="Perfil.html">Crear Evento</a></li>
-            <li><a href="ModificarFormularios.html">Modificar Formulario</a></li>
-        <li><a href="ConsultasAdmin.html">Consultas</a></li>
-          <li><a href="index.html">Salir</a></li>
+          <li class="active"><a href="PantallaAdmin.PHP">Inicio</a></li>
+          <li><a href="AgregarAdmin.PHP">Agregar Administrador</a></li>
+          <li><a href="Perfil.PHP">Crear Evento</a></li>
+            <li><a href="ModificarFormularios.PHP">Modificar Formulario</a></li>
+        <li><a href="ConsultasAdmin.PHP">Consultas</a></li>
+          <li><a href="index.PHP">Salir</a></li>
         </ul>
         <div class="clr"></div>
       </div>

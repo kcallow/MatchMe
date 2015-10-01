@@ -17,17 +17,17 @@
   <div class="main_resize">
     <div class="header">
       <div class="logo">
-        <h1><a href="PantallaInicio.html"><span>Match</span>Me.com<small>Free Dating website</small></a> </h1>
+        <h1><a href="PantallaInicio.PHP"><span>Match</span>Me.com<small>Free Dating website</small></a> </h1>
       </div>
       <div class="clr"></div>
       <div class="menu_nav">
         <ul>
-          <li class="active"><a href="PantallaAdmin.html">Inicio</a></li>
-          <li><a href="AgregarAdmin.html">Agregar Administrador</a></li>
-          <li class="active"><a href="CrearEvento.html">Crear Evento</a></li>
-        <li><a href="ModificarFormularios.html">Modificar Formulario</a></li>
-          <li><a href="ConsultasAdmin.html">Consultas</a></li>
-          <li><a href="index.html">Salir</a></li>
+          <li class="active"><a href="PantallaAdmin.PHP">Inicio</a></li>
+          <li><a href="AgregarAdmin.PHP">Agregar Administrador</a></li>
+          <li class="active"><a href="CrearEvento.PHP">Crear Evento</a></li>
+        <li><a href="ModificarFormularios.PHP">Modificar Formulario</a></li>
+          <li><a href="ConsultasAdmin.PHP">Consultas</a></li>
+          <li><a href="index.PHP">Salir</a></li>
         </ul>
         <div class="clr"></div>
       </div>
@@ -80,7 +80,7 @@
             <div class="clr"></div>
             <ul class="sb_menu">
               <li><a href="#">Banear Usuarios</a></li>
-              <li><a href="ModificarFormularios.html">Actualizar Datos.</a></li>
+              <li><a href="ModificarFormularios.PHP">Actualizar Datos.</a></li>
             </ul>
           </div>
           

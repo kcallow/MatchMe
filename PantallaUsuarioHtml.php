@@ -17,11 +17,11 @@
 	<img src="images/logotipo.png" align="left" width=25%><img src="images/LogoOficialTrans.png" alt="" width="102" height="101" align="right">
       <div class="menu_nav">
         <ul>
-          <li class="active"><a href="PantallaUsuarioHtml.html">Inicio</a></li>
-          <li><a href="Match.html">Match</a></li>
-          <li><a href="ConsultasUser.html">Búsqueda</a></li>
-          <li><a href="Perfil.html">Perfil</a></li>
-          <li><a href="index.html">Salir</a></li>
+          <li class="active"><a href="PantallaUsuarioHtml.PHP">Inicio</a></li>
+          <li><a href="Match.PHP">Match</a></li>
+          <li><a href="ConsultasUser.PHP">Búsqueda</a></li>
+          <li><a href="Perfil.PHP">Perfil</a></li>
+          <li><a href="index.PHP">Salir</a></li>
             
         </ul>
         <div class="clr"></div>
@@ -67,7 +67,7 @@
             <h2 class="star"><span>Mis Acciones</span></h2>
             <div class="clr"></div>
             <ul class="sb_menu">
-              <li class="active"><a href="ConsultasUser.html">Búsqueda</a></li>
+              <li class="active"><a href="ConsultasUser.PHP">Búsqueda</a></li>
               <li><a href="#">Winks Recibidos</a></li>
               <li><a href="#">Mis Winks</a></li>
             </ul>
