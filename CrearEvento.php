@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-        <link rel="shortcut icon" href="images\favicon.ico" >
+      <link rel="shortcut icon" href="images\favicon.ico" >
    		<link rel="icon" type="image/gif" href="images\animated_favicon1.gif" >
 <title>MatchMe.com - Crear Evento</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -53,6 +53,12 @@ oci_execute($array_CIUDAD);
           <input type="text" name="titulo_evento">
         </div><br>
 
+        <div class="clr"></div>
+                <label id="label_input_26_0" for="input_26_0"> Lugar: </label><br>
+        <div id="cid_20" class="form-input jf-required">
+          <input type="text" name="lugar_evento">
+        </div><br>
+
             <div class="clr"></div>
                 <label id="label_input_26_0" for="input_26_0"> Ciudad: </label><br>
         <div id="cid_20" class="form-input jf-required">
@@ -82,7 +88,7 @@ echo "</select>";
         <div id="cid_20" class="form-input jf-required">
          <textarea name="descripcion" rows="10" cols="50"></textarea>
         </div><br>
-              <input type="submit" id="go" value="Aceptar" >
+              <input type="submit" id="go" value="Crear" >
               <input  type="reset" id="cancel"value="Cancelar" >
             </fieldset>
           </div>
