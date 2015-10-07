@@ -14,7 +14,7 @@
 </head>
 <body>
 <?php // CONEXION Y VARIABLES
-$c = oci_connect("ge", "ge", "localhost/BDMATCHME");
+$c = oci_connect("ge", "ge", "MATCH");
 
 $array_CIUDAD = oci_parse($c, 'SELECT * FROM CIUDAD');
 oci_execute($array_CIUDAD);

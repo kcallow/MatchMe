@@ -15,7 +15,7 @@
 <body>
 
 <?php // CONEXION Y VARIABLES
-$c = oci_connect("ge", "ge", "localhost/BDMATCHME");
+$c = oci_connect("ge", "ge", "MATCH");
 
 $array_GENERO = oci_parse($c, 'SELECT * FROM GENERO');
 oci_execute($array_GENERO);

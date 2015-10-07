@@ -13,6 +13,7 @@
 <script type="text/javascript" src="js/cuf_run.js"></script>
 </head>
 <body>
+$c = oci_connect("ge", "ge", "MATCH");
 <div class="main">
   <div class="main_resize">
     <div class="header">
