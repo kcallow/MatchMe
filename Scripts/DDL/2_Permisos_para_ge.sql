@@ -10,3 +10,4 @@ grant create view to ge;
 grant create trigger to ge;
 grant create any  directory to ge;
 grant read on directory Imag_Perfil to ge;
+grant create sequence to ge;
